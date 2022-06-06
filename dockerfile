@@ -9,3 +9,4 @@ RUN unzip Creative\ Design\ Free\ Website\ Template\ -\ Free-CSS.com.zip
 RUN cp -rvf Creative-design/*
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
+
