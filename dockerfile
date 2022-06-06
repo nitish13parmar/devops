@@ -13,3 +13,4 @@ RUN cp -rvf creative-design/*
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
 
+
