@@ -9,8 +9,8 @@ RUN yum install -y unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page279/ecourses.zip /var/www/html/creative-design.zip
 WORKDIR /var/www/html
 RUN unzip creative-design.zip
-RUN cp -rvf ecourses/* .
-RUN rm -rf ecourses creative-design.zip
+RUN cp -rvf online-courses-html-template/* .
+RUN rm -rf online-courses-html-template creative-design.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
 
