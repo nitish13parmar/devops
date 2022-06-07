@@ -9,7 +9,7 @@ RUN yum install -y unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page279/creative-design.zip /var/www/html/creative-design.zip
 WORKDIR /var/www/html
 RUN unzip creative-design.zip
-RUN cp -rvf creative-design/*
+RUN cp -rvf creative-design/* .
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
 
