@@ -10,7 +10,6 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page279/cr
 WORKDIR /var/www/html
 RUN unzip creative-design.zip
 RUN cp -rvf creative-design/* .
-RUN rm -rf creative-design creative-design.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
 
